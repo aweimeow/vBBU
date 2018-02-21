@@ -1,0 +1,10 @@
+option app_label = "vbbuservice";
+option name = "vbbuservice";
+
+message VBBUService (Service){
+    option verbose_name = "Example Service";
+}
+
+message VBBUServiceInstance (TenantWithContainer){
+     option verbose_name = "Example Service Instance";
+}
