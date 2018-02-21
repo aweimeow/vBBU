@@ -26,10 +26,10 @@ topology_template:
     vbbuservice:
       type: tosca.nodes.ServiceController
       properties:
-          base_url: file:///opt/xos_services/vbbuservice/xos/
+          base_url: file:///opt/xos_services/vbbu/xos/
           # The following will concatenate with base_url automatically, if
           # base_url is non-null.
           xproto: ./
-          private_key: file:///opt/xos/key_import/vbbuservice_rsa
-          public_key: file:///opt/xos/key_import/vbbuservice_rsa.pub
+          private_key: file:///opt/xos/key_import/mcord_rsa
+          public_key: file:///opt/xos/key_import/mcord_rsa.pub
 

@@ -14,16 +14,7 @@
 # limitations under the License.
 
 
-name: vbbuservice-synchronizer
-accessor:
-  username: xosadmin@opencord.org
-  password: "@/opt/xos/services/vbbu/credentials/xosadmin@opencord.org"
-required_models:
-  - VBBUService
-  - VBBUServiceInstance
-  - ServiceDependency
-  - ServiceMonitoringAgentInfo
-dependency_graph: "/opt/xos/synchronizers/vbbuservice/model-deps"
-steps_dir: "/opt/xos/synchronizers/vbbuservice/steps"
-sys_dir: "/opt/xos/synchronizers/vbbuservice/sys"
-model_policies_dir: "/opt/xos/synchronizers/vbbuservice/model_policies"
+# models.py -  ExampleService Models
+
+from core.models import Service, TenantWithContainer, XOSBase
+from django.db.models import *
